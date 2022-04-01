@@ -19,7 +19,6 @@ public class MyFirstWebDriverScripting1 {
 		uname.sendKeys("Nikitapatil16");
 		driver.findElement(By.name("password")).sendKeys("Nikitapatil@362");
 		driver.findElement(By.name("login")).click();
-		
 		driver.quit();
 	}
 

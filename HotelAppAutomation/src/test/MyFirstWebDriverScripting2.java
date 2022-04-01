@@ -16,11 +16,10 @@ public class MyFirstWebDriverScripting2 {
 		driver.get("http://www.adactinhotelapp.com");
 		driver.manage().window().minimize();		//for window minimize
 		//locate element or find element
-		WebElement uname = driver.findElement(By.id("username"));
+		WebElement uname = driver.findElement(By.className("username"));
 		uname.sendKeys("Nikitapatil16");
-		driver.findElement(By.id("password")).sendKeys("Nikitapatil@362");
-		driver.findElement(By.id("login")).click();
-		
+		driver.findElement(By.className("password")).sendKeys("Nikitapatil@362");
+		driver.findElement(By.className("login")).click();
 		driver.quit();
 	}
 
